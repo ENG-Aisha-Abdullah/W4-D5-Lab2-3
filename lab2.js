@@ -51,10 +51,12 @@ let six = document.getElementById("six")
 let seven = document.getElementById("seven")
 let eight = document.getElementById("eight")
 let nine = document.getElementById("nine")
-let img = document.getElementsByName("img");
+
+
+
 
 function change(number) {
-    
+    let img = document.getElementsByClassName("tv-show img");
     if (number === 1) {
         img.src = "https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/blue-planet.jpg"
     }
@@ -82,7 +84,6 @@ function change(number) {
     else if (number === 9) {
         img.src = "https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/stranger-things.jpg"
     }
-
 
 };
 
