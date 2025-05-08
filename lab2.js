@@ -51,10 +51,10 @@ let six = document.getElementById("six")
 let seven = document.getElementById("seven")
 let eight = document.getElementById("eight")
 let nine = document.getElementById("nine")
-let img = document.getElementById("screen");
+let img = document.getElementsByName("img");
 
 function change(number) {
-    let img = document.getElementById("screen");
+    
     if (number === 1) {
         img.src = "https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/blue-planet.jpg"
     }
@@ -87,7 +87,7 @@ function change(number) {
 };
 
 one.addEventListener("click", () => {
-    change(1);
+change(1);
 });
 two.addEventListener("click", () => {
     change(2)
