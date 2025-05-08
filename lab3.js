@@ -16,13 +16,20 @@ let goLight = document.getElementById("goLight")
 
 
 
-stopButton.addEventListener("click", ()=>{
-    stopLight.style.backgroundColor= "red"
+stopButton.addEventListener("click", () => {
+    stopLight.style.backgroundColor = "red"
+    slowLight.style.backgroundColor = "black"
+    goLight.style.backgroundColor = "black"
 })
-slowButton.addEventListener("click", ()=>{
-    slowLight.style.backgroundColor= "yellow"
+slowButton.addEventListener("click", () => {
+    slowLight.style.backgroundColor = "yellow"
+    stopLight.style.backgroundColor = "black"
+    goLight.style.backgroundColor = "black"
+
 })
-goButton.addEventListener("click", ()=>{
-    goLight.style.backgroundColor= "green"
+goButton.addEventListener("click", () => {
+    goLight.style.backgroundColor = "green"
+     stopLight.style.backgroundColor = "black"
+      slowLight.style.backgroundColor = "black"
 })
 
